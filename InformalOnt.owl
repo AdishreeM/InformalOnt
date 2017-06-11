@@ -1,0 +1,3012 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#"
+     xml:base="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasCertificate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasCertificate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresCertificate"/>
+        <rdfs:comment>What certificate the Person has.</rdfs:comment>
+        <rdfs:label>hasCertificate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasDegree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasDegree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresDegree"/>
+        <rdfs:comment>What degree the Person has.</rdfs:comment>
+        <rdfs:label>hasDegree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasDiploma -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasDiploma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresDiploma"/>
+        <rdfs:comment>What diploma the Person has.</rdfs:comment>
+        <rdfs:label>hasDiploma</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasEmployer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasEmployer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#providesJob"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Employer"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasPayMode"/>
+        <rdfs:comment>The employer who is providing the job offer.</rdfs:comment>
+        <rdfs:label>hasEmployer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasFieldOfWork -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasFieldOfWork">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#offersFieldOfWork"/>
+        <rdfs:comment>What field of work the Person has.</rdfs:comment>
+        <rdfs:label>hasFieldOfWork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasIdentityProof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasIdentityProof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresIdentityProof"/>
+        <rdfs:comment>What identity proof certificate the Person has.</rdfs:comment>
+        <rdfs:label>hasIdentityProof</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasPayMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasPayMode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+        <rdfs:comment>The method of payment the job seeker can demand.</rdfs:comment>
+        <rdfs:label>hasPayMode</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasTraining -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasTraining">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresTraining"/>
+        <rdfs:comment>What training the Person has.</rdfs:comment>
+        <rdfs:label>hasTraining</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#offersFieldOfWork -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#offersFieldOfWork">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+        <rdfs:comment>The field of work which the job offers.</rdfs:comment>
+        <rdfs:label>offersFieldOfWork</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#providesJob -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#providesJob">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Employer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:comment>The job offer the employer provides.</rdfs:comment>
+        <rdfs:label>providesJob</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresCertificate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresCertificate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+        <rdfs:comment>What certificate the job offer demands.</rdfs:comment>
+        <rdfs:label>requiresCertificate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresDegree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresDegree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+        <rdfs:comment>What degree the job offer demands.</rdfs:comment>
+        <rdfs:label>requiresDegree</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresDiploma -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresDiploma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+        <rdfs:comment>What diploma the job offer demands.</rdfs:comment>
+        <rdfs:label>requiresDiploma</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresIdentityProof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresIdentityProof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+        <rdfs:comment>What identity proof the job offer demands.</rdfs:comment>
+        <rdfs:label>requiresIdentityProof</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresTraining -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#requiresTraining">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+        <rdfs:comment>What training the job offer demands.</rdfs:comment>
+        <rdfs:label>requiresTraining</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CompetencyLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CompetencyLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The competency level that can be defined as:
+CompetencyLevel = Recommendation + Experience + Education</rdfs:comment>
+        <rdfs:label>CompetencyLevel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CostPerUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CostPerUnit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The amount per unit a job seeker can demand.</rdfs:comment>
+        <rdfs:label>CostPerUnit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Currency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Currency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The currency in which the cost is covered.</rdfs:comment>
+        <rdfs:label>Currency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DatePosted -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DatePosted">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The date when the job offer was posted.</rdfs:comment>
+        <rdfs:label>DatePosted</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ExperienceYears -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ExperienceYears">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The number of years the worker has been in the profession.</rdfs:comment>
+        <rdfs:label>ExperienceYears</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The unique ID of the Employer</rdfs:comment>
+        <rdfs:label>JobID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOpenings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOpenings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>The number of job openings available for a single job offer.</rdfs:comment>
+        <rdfs:label>JobOpenings</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The job title adhered to the job offer.</rdfs:comment>
+        <rdfs:label>JobTitle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Recommendation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Recommendation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>The number of good recommendation a worker has received.</rdfs:comment>
+        <rdfs:label>Recommendation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Responsibilites -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Responsibilites">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The job description and the nature of the work and responsibilities are described here.</rdfs:comment>
+        <rdfs:label>Responsibilities</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ValidThrough -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ValidThrough">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The date till which the job offer is valid.</rdfs:comment>
+        <rdfs:label>ValidThrough</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WorkHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WorkHours">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>The number of hours approximately the job demands.</rdfs:comment>
+        <rdfs:label>WorkHours</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WorkerID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WorkerID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The Unique ID of the job seeker or Worker.</rdfs:comment>
+        <rdfs:label>WorkerID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The address of the Person.</rdfs:comment>
+        <rdfs:label>hasAddress</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>The age of the person.</rdfs:comment>
+        <rdfs:label>hasAge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasAddress"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The city where the Person resides.</rdfs:comment>
+        <rdfs:label>hasCity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasEmail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The e-mail address of the Person.</rdfs:comment>
+        <rdfs:label>hasEmail</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasFirstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasFirstName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The first name of the Person.</rdfs:comment>
+        <rdfs:label>hasFirstName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasGender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The gender or sex of the person</rdfs:comment>
+        <rdfs:label>hasGender</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasLastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasLastName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The last name of the Person.</rdfs:comment>
+        <rdfs:label>hasLastName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasLocality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasLocality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasAddress"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The locality where the Person resides.</rdfs:comment>
+        <rdfs:label>hasLocality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasOrganisationName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasOrganisationName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of the Organisation of the Employer.</rdfs:comment>
+        <rdfs:label>hasOrganisationName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasPhoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasPhoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment>The phone number of the Person or Organisation.</rdfs:comment>
+        <rdfs:label>hasPhoneNumber</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasState -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasState">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#hasAddress"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The state where the Person resides.</rdfs:comment>
+        <rdfs:label>hasState</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+        <rdfs:comment>This class contains all the identity proof certificates.</rdfs:comment>
+        <rdfs:label>Certificate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Education"/>
+        <rdfs:comment>This class contains a list of possible degrees a job seeker can possess.</rdfs:comment>
+        <rdfs:label>Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Education"/>
+        <rdfs:comment>This class contains a list of possible diplomas a job seeker can possess.</rdfs:comment>
+        <rdfs:label>Diploma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Education">
+        <rdfs:comment>This class contains the three types of education required: Degree, Diploma and Training.</rdfs:comment>
+        <rdfs:label>Education</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Employer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Employer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:comment>The individuals of this class represents the profile information of the Employer.</rdfs:comment>
+        <rdfs:label>Employer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Skills"/>
+        <rdfs:comment>The field of work of the skills are represented as individuals of this class</rdfs:comment>
+        <rdfs:label>FieldOfWork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer">
+        <rdfs:comment>This class contains the jobs offered as individuals.</rdfs:comment>
+        <rdfs:label>JobOffer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Skills"/>
+        <rdfs:comment>The mode of payment by which the job seeker can demand a salary.</rdfs:comment>
+        <rdfs:label>PayBy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person">
+        <rdfs:comment>This class contains the two types of persons we are concerned with: Employer and Worker.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Skills">
+        <rdfs:comment>This class documents the Field of work for a skill and the payment mode.</rdfs:comment>
+        <rdfs:label>Skills</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Education"/>
+        <rdfs:comment>This class contains a list of possible trainings a job seeker can possess.</rdfs:comment>
+        <rdfs:label>Training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Person"/>
+        <rdfs:comment>The individuals of this class represents the profile information of the Job Seeker OR Worker.</rdfs:comment>
+        <rdfs:label>Worker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AadharCard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AadharCard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AccomodationOperationTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AccomodationOperationTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Actor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AdvancedBeauticianTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AdvancedBeauticianTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AdvancedPainting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AdvancedPainting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AdvertisingDesignTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AdvertisingDesignTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AgricultureVehicleMaintenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AgricultureVehicleMaintenance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AirConditionerRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AirConditionerRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Apparels -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Apparels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ArchitecturalDraughtmanshipTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ArchitecturalDraughtmanshipTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AreaOfWall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AreaOfWall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ArtANDMakeUpTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ArtANDMakeUpTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Architecture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Architecture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Arts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Arts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.BusinessAdministraion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.BusinessAdministraion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Commerce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Commerce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.ComputerApplication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.ComputerApplication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Education -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Education">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Science">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Technology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Technology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Vocation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#B.Vocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Baking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Baking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BankingManagementTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BankingManagementTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BasicElectronicsTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BasicElectronicsTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BasicFrontOfficeTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BasicFrontOfficeTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BatikWorkTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BatikWorkTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BatteryType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BatteryType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Beautician -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Beautician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BeautyCare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BeautyCare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BeautyCulture -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BeautyCulture">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BeautyCultureTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BeautyCultureTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BeautyService -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BeautyService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BirthCertificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BirthCertificate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Blacksmithy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Blacksmithy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BodyMassagesANDTherapiesTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BodyMassagesANDTherapiesTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BookBindingANDHandmadePackaging -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BookBindingANDHandmadePackaging">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BrickMason -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#BrickMason">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CNCLatherWireCutMillling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CNCLatherWireCutMillling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CallCenterTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CallCenterTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CameraANDLightingTechniqueTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CameraANDLightingTechniqueTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CarType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CarType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Carpentry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Carpentry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Casting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Casting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Catering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Catering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CateringAssistant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CateringAssistant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CateringManagementTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CateringManagementTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ChalkCrayonProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ChalkCrayonProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CharacterCertificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CharacterCertificate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Chocolateir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Chocolateir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Class10Pass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Class10Pass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Class12Pass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Class12Pass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Class5Pass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Class5Pass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Class8Pass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Class8Pass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Classification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Classification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ClinicalNutritionTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ClinicalNutritionTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Cobbler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Cobbler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CollageMaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CollageMaking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CollegeCoaching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CollegeCoaching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Colour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Colour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CompetencyInPowerDistributionTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CompetencyInPowerDistributionTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CompressorRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CompressorRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerHardwareTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerHardwareTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerSkills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerSkills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerbasicsTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerbasicsTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerisedAccountingANDFinancialDecisionMaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerisedAccountingANDFinancialDecisionMaking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerisedAccountingTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ComputerisedAccountingTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Confectionary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Confectionary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Construction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Construction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Contractor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Contractor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CookCommercial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CookCommercial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CookHome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CookHome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Cosmetology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Cosmetology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CosmetologyScience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CosmetologyScience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CuttingANDTailoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CuttingANDTailoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CycleMaintenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CycleMaintenance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DanceTutor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DanceTutor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Dancer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Dancer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DatabaseAdministration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DatabaseAdministration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DefenceID -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DefenceID">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DeskTopPublishingTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DeskTopPublishingTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DieFitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DieFitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Distance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Distance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DomesticHelp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DomesticHelp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DomesticWiremanTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DomesticWiremanTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DrawingTutor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DrawingTutor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DriverCommercial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DriverCommercial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DriverOccasional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DriverOccasional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Driving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Driving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DrivingLicense -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DrivingLicense">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DryCleaning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DryCleaning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Electrician -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Electrician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Electroplating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Electroplating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Embriodery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Embriodery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Emp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Emp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Employer"/>
+        <hasAddress>A-133 Survey Park</hasAddress>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasAge>
+        <hasEmail>emp1@employer.com</hasEmail>
+        <hasFirstName>Johnny</hasFirstName>
+        <hasGender>Male</hasGender>
+        <hasLastName>Depp</hasLastName>
+        <hasOrganisationName>Favourite Motor</hasOrganisationName>
+        <hasPhoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123654789</hasPhoneNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Emp2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Emp2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Employer"/>
+        <providesJob rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#off2"/>
+        <hasPhoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">965433678</hasPhoneNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#EngineeringVocationTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#EngineeringVocationTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#EnglishANDCommunicationTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#EnglishANDCommunicationTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#EnglishCommunicationANDPresentationSkills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#EnglishCommunicationANDPresentationSkills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Flavour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Flavour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Florist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Florist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FlowerVariety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FlowerVariety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FoodPreservation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FoodPreservation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FoodProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FoodProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FoodProductionTechniques -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FoodProductionTechniques">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Footwear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Footwear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Forging -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Forging">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FourWheelerMechanism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FourWheelerMechanism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FutureStudiesExplorationsTowardsANewCreation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FutureStudiesExplorationsTowardsANewCreation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Gardener -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Gardener">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GarmentMaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GarmentMaking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GlassCutting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GlassCutting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GlassPainting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GlassPainting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GlassPolishing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GlassPolishing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GlassWorks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GlassWorks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GuitarTutor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#GuitarTutor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HairDesigningTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HairDesigningTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HairDressing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HairDressing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HandloomWeavingTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HandloomWeavingTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HandmadePaperMakingTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HandmadePaperMakingTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HardwareIssue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HardwareIssue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HeatTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HeatTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Height -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Height">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HerbalBeautyCareTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HerbalBeautyCareTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HomeDecoration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HomeDecoration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HomeOROfficeApplianceRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HomeOROfficeApplianceRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HotelANDCateringManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HotelANDCateringManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HotelieringANDCatering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HotelieringANDCatering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HouseElectrician -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HouseElectrician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HouseKeeping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HouseKeeping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#IncomeCertificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#IncomeCertificate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#IndustrialTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#IndustrialTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#InteriorDesigner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#InteriorDesigner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#InternationalCulinaryArtsANDEntrepreneurship -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#InternationalCulinaryArtsANDEntrepreneurship">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#InternetServices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#InternetServices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Ironing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Ironing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Jewellery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Jewellery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#KarateTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#KarateTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#KitchenANDCateringOperations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#KitchenANDCateringOperations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Knitting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Knitting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Labourer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Labourer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LaptopRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LaptopRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Laundry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Laundry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherBags -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherBags">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherCraftTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherCraftTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherGrade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherGrade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherIndustry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherIndustry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherShoes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LeatherShoes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Length -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Length">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LengthOfWire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LengthOfWire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LensGrinding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LensGrinding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LibraryAssistantTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#LibraryAssistantTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.Arts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.Arts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.BusinessAdministration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.BusinessAdministration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.Science">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.Technology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.Technology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.Vocation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#M.Vocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Degree"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MSOffice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MSOffice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MaintenanceANDRepairingOfAudioVideoEquipmentsTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MaintenanceANDRepairingOfAudioVideoEquipmentsTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MarriageCertificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MarriageCertificate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Material -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Material">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Mechanic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Mechanic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MechanicCar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MechanicCar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MedicalEquipmentTechnician -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MedicalEquipmentTechnician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Medicine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Medicine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MetalWorks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MetalWorks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MicrowaveRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MicrowaveRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MobileCommunicationTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MobileCommunicationTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MobilePhoneRepairingTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MobilePhoneRepairingTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MobileRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MobileRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MobileRepairing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MobileRepairing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MotorANDSmallRatingTranformerWindingTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MotorANDSmallRatingTranformerWindingTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MotorcycleServiceANDRepairTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MotorcycleServiceANDRepairTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MouldingPatternMaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MouldingPatternMaking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MusicInstrumentTutor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#MusicInstrumentTutor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfClasses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfClasses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfCourses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfCourses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfDays -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfDays">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfElectricPoints -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfElectricPoints">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfFloors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfFloors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfItems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfItems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfMeals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfMeals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfPages -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfPages">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfPeople -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfPeople">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfPieces -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfPieces">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfSubjects -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfSubjects">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfSwitches -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfSwitches">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfWalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfWalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Non-VegetarianFood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Non-VegetarianFood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#NutritionANDDieteticsTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#NutritionANDDieteticsTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#OccassionType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#OccassionType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Off1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Off1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <hasEmployer rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Emp1"/>
+        <offersFieldOfWork rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DriverCommercial"/>
+        <requiresCertificate rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DrivingLicense"/>
+        <DatePosted>20/10/17</DatePosted>
+        <ExperienceYears>1 Year</ExperienceYears>
+        <JobID>J687AD</JobID>
+        <JobOpenings rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</JobOpenings>
+        <JobTitle>Commercial Driver</JobTitle>
+        <Responsibilites>Commercial Driving</Responsibilites>
+        <ValidThrough>25/10/17</ValidThrough>
+        <WorkHours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</WorkHours>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PaintQuality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PaintQuality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Painter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Painter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PainterArtist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PainterArtist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PainterCars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PainterCars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PainterWalls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PainterWalls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Painting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Painting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PanCard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PanCard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Passport -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Passport">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PedicureANDManicureTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PedicureANDManicureTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PerHourBasis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PerHourBasis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PhoneModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PhoneModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PhoneType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PhoneType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Photocopying -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Photocopying">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PhotographerWedding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PhotographerWedding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Photography -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Photography">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PianoTutor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PianoTutor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Plastering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Plastering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Plate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Plate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Plumber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Plumber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PlumbingRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PlumbingRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PotteryTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PotteryTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PowerSupply -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PowerSupply">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Printing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Printing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ProductType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ProductType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ProfessionalCookery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ProfessionalCookery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ProfessionalMakeUPTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ProfessionalMakeUPTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ProgramAssistantTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ProgramAssistantTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#RefrigerationANDAirConditioning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#RefrigerationANDAirConditioning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#RefrigeratorRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#RefrigeratorRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#RestaurantService -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#RestaurantService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SanitaryFitter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SanitaryFitter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SanitationWorker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SanitationWorker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SavouryMaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SavouryMaking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SchoolOROfficeDriver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SchoolOROfficeDriver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SchoolTutor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SchoolTutor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SecretarialPractice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SecretarialPractice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SecurityGuard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SecurityGuard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ServiceCharge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ServiceCharge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ServiceType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ServiceType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SheetMetalWorks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SheetMetalWorks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Shift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Shift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ShoeType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#ShoeType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SingingTutor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SingingTutor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Size -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Size">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SmallScaleProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SmallScaleProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SoftwareIssue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SoftwareIssue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SpaTherapiesTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SpaTherapiesTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SportsANDFitnessNutritionTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SportsANDFitnessNutritionTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SportsCoach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SportsCoach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SportsGoodsProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SportsGoodsProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Standard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Standard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SteelFabrication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SteelFabrication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#StenographyTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#StenographyTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#StoneMason -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#StoneMason">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SwitchboardWiring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#SwitchboardWiring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Tailor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Tailor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TechnicalExcellenceTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TechnicalExcellenceTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TechnologyTransferANDLicensingTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TechnologyTransferANDLicensingTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TelephoneIntercomRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TelephoneIntercomRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TelevisionANDVideoProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TelevisionANDVideoProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Tourism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Tourism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TransferCertificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TransferCertificate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Tutor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Tutor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Typewriter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Typewriter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TypewritingTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#TypewritingTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Typing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Typing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VegetarianFood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VegetarianFood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VehicleFuelInjection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VehicleFuelInjection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VehicleMaintenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VehicleMaintenance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VehicleType -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VehicleType">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Videography -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Videography">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VideographyTechniques -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#VideographyTechniques">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Diploma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Waiter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Waiter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Washing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Washing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WashingMachineRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WashingMachineRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WaterCoolerCleaning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WaterCoolerCleaning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WaterCoolerRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WaterCoolerRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WaterPurifierRepair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WaterPurifierRepair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WaxCandlesProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WaxCandlesProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Welding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Welding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WeldingTechnologyTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WeldingTechnologyTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Wiring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Wiring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WoodQuality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WoodQuality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#PayBy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WoodworkTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#WoodworkTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Wor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Wor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <hasCertificate rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DrivingLicense"/>
+        <hasFieldOfWork rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#DriverCommercial"/>
+        <hasIdentityProof rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#AadharCard"/>
+        <hasPayMode rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#No.OfDays"/>
+        <CostPerUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</CostPerUnit>
+        <Currency>INR</Currency>
+        <ExperienceYears>Three Years</ExperienceYears>
+        <WorkerID>W007</WorkerID>
+        <WorkerID>W98CG</WorkerID>
+        <hasAddress>98/B Durgapur</hasAddress>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+        <hasEmail>worker@mahlyfmahrulz.com</hasEmail>
+        <hasFirstName>Dwayne</hasFirstName>
+        <hasGender>Male</hasGender>
+        <hasLastName>Johnson</hasLastName>
+        <hasPhoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">987456321</hasPhoneNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Wor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Wor2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Worker"/>
+        <hasFieldOfWork rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Electrician"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#computerTypingANDInternetOperationTraining -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#computerTypingANDInternetOperationTraining">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Training"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#off2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#off2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#JobOffer"/>
+        <hasEmployer rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Emp2"/>
+        <offersFieldOfWork rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Electrician"/>
+        <offersFieldOfWork rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#HomeOROfficeApplianceRepair"/>
+        <JobID>J12</JobID>
+        <JobTitle>Home appliances</JobTitle>
+        <Responsibilites>Fan repair</Responsibilites>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#rationCard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#rationCard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#10PassCertificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#10PassCertificate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#12PassCertificate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#12PassCertificate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#2WheelerMaintenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#2WheelerMaintenance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#3WheelerMaintenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#3WheelerMaintenance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#4WheelerMaintenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#4WheelerMaintenance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CarBatteryRepair/Replacement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#CarBatteryRepair/Replacement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#EssentialOils&amp;PerfumeProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#EssentialOils&amp;PerfumeProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Motor&amp;TransformerRewinding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Motor&amp;TransformerRewinding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Soap&amp;DetergentProduction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Soap&amp;DetergentProduction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#FieldOfWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Voter&apos;sIdentityCard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Voter&apos;sIdentityCard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abc/ontologies/2017/5/untitled-ontology-21#Certificate"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
